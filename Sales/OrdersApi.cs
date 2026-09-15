@@ -1,4 +1,4 @@
-namespace Store;
+namespace Sales;
 
 public static class OrdersApi
 {

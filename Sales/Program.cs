@@ -1,6 +1,6 @@
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
-using Store;
+using Sales;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,6 +1,6 @@
 using System.Diagnostics.Metrics;
 
-namespace Store;
+namespace Sales;
 
 public class OrdersMetrics
 {

@@ -2,10 +2,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C#: Store Debug",
+      "name": "C#: Sales Debug",
       "type": "dotnet",
       "request": "launch",
-      "projectPath": "${workspaceFolder}/Store/Store.csproj"
+      "projectPath": "${workspaceFolder}/Sales/Sales.csproj"
     }
   ]
 }

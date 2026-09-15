@@ -7,7 +7,7 @@ services:
     command:
       - "--config.file=/etc/prometheus/prometheus.yml"
     volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
       - prometheus:/prometheus
     ports:
       - 9090:9090
@@ -16,6 +16,8 @@ services:
     image: grafana/grafana:latest
     volumes:
       - grafana:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards/sales.json:/var/lib/grafana/dashboards/sales.json:ro
     environment:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
@@ -25,8 +27,8 @@ services:
     depends_on:
       - prometheus
 
-  store:
-    build: ./Store
+  sales:
+    build: ./Sales
     ports:
       - 8080:8080
 

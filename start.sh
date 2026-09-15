@@ -1,1 +1,2 @@
-docker compose up --build --remove-orphans -d
+#!/bin/bash
+docker compose up -d --build --force-recreate

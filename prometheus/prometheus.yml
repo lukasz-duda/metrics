@@ -2,6 +2,6 @@ global:
   scrape_interval: 5s
 
 scrape_configs:
-  - job_name: "Store"
+  - job_name: "Sales"
     static_configs:
-      - targets: ["store:8080"]
+      - targets: ["sales:8080"]

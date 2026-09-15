@@ -9,14 +9,19 @@ Requirements:
 1. [.NET 10](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
 2. [Docker](https://docs.docker.com/engine/install/ubuntu/)
 
-Start:
+Start sales services:
 
-```
+```bash
 ./start
 ```
 
-Setup [Graphana](http://localhost:3000):
+Open [Grafana](http://localhost:3000):
 
 1. Login as user `admin` with password `admin`.
-1. Add new Prometheus connection `  `.
-1. Import Dashboard `sales-dashboard.json`.
+1. Open the automatically provisioned `Sales` dashboard.
+
+Test 1 order per second:
+
+```bash
+./test.sh
+```
