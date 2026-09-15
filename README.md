@@ -25,5 +25,3 @@ Test order with 1s delay between requests:
 ```bash
 ./test.sh
 ```
-
-Każde żądanie trwa zwykle 200 ms, ale co dziesiąte trwa 1 s. Dzięki temu panel pokazuje różnicę: p50 opisuje typowe żądanie, a p95 ujawnia wolniejsze 10% żądań. Przy stałym `Thread.Sleep(200)` oba percentyle byłyby prawie takie same, więc poprzedni przykład nie pokazywał przewagi p95.
