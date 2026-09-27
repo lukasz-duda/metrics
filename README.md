@@ -25,3 +25,5 @@ Test order with 1s delay between requests:
 ```bash
 ./test.sh
 ```
+
+[sales-dashboard.webm](https://github.com/user-attachments/assets/f4e1b5cb-36cb-4b39-85df-e00150fda32d)
